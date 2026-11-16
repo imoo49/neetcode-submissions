@@ -1,0 +1,11 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        n=len(nums)
+        nums.sort()
+        i=0
+        for j in range(1,n):
+            if nums[i]==nums[j]:
+                return True
+            i=i+1
+        return False
+        
